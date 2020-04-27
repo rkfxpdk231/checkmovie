@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check Movie</title>
+  </head>
+  <body>
+    <div id="top">
+      <div id="topLocation">
+        <input type="button" class="img-button" onclick="location.href='./main.html'">
+        <button id="login" onclick="location.href=''">로그인</button>
+        <button id="signup" onclick="location.href='./signup.html'">회원가입</button>
+        <div>
+          <button id="movieRank">영화랭킹</button>
+          <button id="naver">네이버</button>
+          <button id="netflix">넷플릭스</button>
+        </div>
+      </div>
+    </div>
+    <div id="loginPos">
+      <p id="loginTitle">로그인</p>
+      <hr id="hr">
+      <div>
+        <table>
+          <tr>
+            <td><p id="idPw">아이디</p></td>
+            <td id="idPwPos"><input id='userid' type='text'/></td>
+          </tr>
+          <tr>
+            <td><p id="idPw">비밀번호</p></td>
+            <td><input id='pwd' type='password'/></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input class="doLogin" type="submit" value="로그인"></td>
+          </tr>
+        </table>
+        <!-- 로그인 버튼 만들어야되는데 아직 background가 없어서 안 만듦-->
+      </div>
+    </div>
+  </body>
+</html>
+<style type = "text/css">
+body {
+  background-color: black;
+  min-width: 750px;
+}
+#top {
+  height: 140px;
+  border-bottom: 1px solid white;
+}
+#topLocation {
+  margin: 30px 0px 30px 0px; 
+}
+input {
+  vertical-align: middle;
+  position: relative;
+  left: 40%;
+}
+input.img-button {
+  background: url( "../image/main logo.PNG" ) no-repeat;
+  border: none;
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+}
+img {
+  height: 100px;
+  position: relative;
+  left: 39%;
+}
+#login {
+  margin-top: 100px;
+  float: right;
+  margin-right: 100px;
+}
+#signup{
+  margin-top: 100px;
+  float: right;
+}
+button {
+  margin-right: 10px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 3px 6px 3px 6px;
+}
+#left {
+  width: 200px;
+  margin: 30px 0px 40px 40px;
+  text-align: center;
+}
+#leftLocation {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+#movieRank {
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  float: left;
+  margin-left: 100px;
+}
+#movieRank:hover {
+  color: gray;
+}
+#naver {
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  float: left;
+}
+#naver:hover {
+  color: gray;
+}
+#netflix {
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  float: left;
+}
+#netflix:hover {
+  color: gray;
+}
+#loginPos {
+  position: relative;
+  top: 40px;
+  left: 35%;
+  background-color: gray;
+  height: 310px;
+  width: 35%;
+  margin-bottom: 50px;
+}
+#loginTitle {
+  font-size: 23px;
+  color: white;
+  padding: 12px 0px 0px 20px;
+}
+#hr {
+  border: 1px solid black;
+}
+#hr {
+  position: relative;
+  top: -10px;
+  width: 100%;
+}
+#idPw {
+  font-size: 23px;
+  color: white;
+  padding-left: 15px;
+}
+#userid {
+  margin-left: -120px;
+  height: 30px;
+}
+#pwd {
+  margin-left: -120px;
+  height: 30px;
+}
+table {
+  position: relative;
+  top: -15px;
+  width: 100%;
+}
+td {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.doLogin {
+  background-color: gray;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  margin-top: 10px;
+}
+.doLogin:hover {
+  color: black;
+  font-weight: 700;
+}
+</style>
