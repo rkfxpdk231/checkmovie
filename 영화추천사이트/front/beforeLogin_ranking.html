@@ -7,7 +7,7 @@
     <div id="top">
       <div id="topLocation">
         <input type="button" class="img-button" onclick="location.href='./beforeLogin_main.html'">
-        <button id="login" onclick="location.reload()">로그인</button>
+        <button id="login" onclick="location.href='./login.html'">로그인</button>
         <button id="signup" onclick="location.href='./signup.html'">회원가입</button>
         <div>
           <button id="movieRank" onclick="location.href='./beforeLogin_ranking.html'">영화랭킹</button>
@@ -16,25 +16,15 @@
         </div>
       </div>
     </div>
-    <div id="loginPos">
-      <p id="loginTitle">로그인</p>
-      <hr id="hr">
-      <div>
-        <table>
-          <tr>
-            <td><p id="idPw">아이디</p></td>
-            <td id="idPwPos"><input id='userid' type='text'/></td>
-          </tr>
-          <tr>
-            <td><p id="idPw">비밀번호</p></td>
-            <td><input id='pwd' type='password'/></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input class="doLogin" type="submit" value="로그인"></td>
-          </tr>
-        </table>
-        <!-- 로그인 버튼 만들어야되는데 아직 background가 없어서 안 만듦-->
+    <div id="rankPos">
+      <div id="rankTitle">
+        <!-- 문제. 이 부분도 api가 필요한 부분인가? -->
+        <button id="dayRank">일간</button>
+        <button id="weekRank">주간</button>
+        <button id="monthRank">월간</button>
+        <button id="dibsRank">찜 한 영화</button>
       </div>
+      <hr>
     </div>
   </body>
 </html>
@@ -120,63 +110,61 @@ button {
 #netflix:hover {
   color: gray;
 }
-#loginPos {
-  position: relative;
-  top: 40px;
-  left: 35%;
+#rankPos {
+  position: absolute;
+  min-width: 600px;
+  top: 230px;
+  left: 18%;
   background-color: gray;
-  height: 310px;
-  width: 35%;
-  margin-bottom: 50px;
+  height: 300px;
+  width: 65%;
 }
-#loginTitle {
-  font-size: 23px;
-  color: white;
-  padding: 12px 0px 0px 20px;
+#rankTitle {
+  margin: 0px 60px 10px 60px;
+  display: flex;
+  justify-content: space-between;
 }
-#hr {
-  border: 1px solid black;
-}
-#hr {
-  position: relative;
-  top: -10px;
-  width: 100%;
-}
-#idPw {
-  font-size: 23px;
-  color: white;
-  padding-left: 15px;
-}
-#userid {
-  margin-left: -120px;
-  height: 30px;
-}
-#pwd {
-  margin-left: -120px;
-  height: 30px;
-}
-table {
-  position: relative;
-  top: -15px;
-  width: 100%;
-}
-td {
-  padding-left: 10px;
-  padding-bottom: 10px;
-  text-align: left;
-}
-.doLogin {
-  background-color: gray;
+#dayRank {
   border: none;
-  color: white;
-  font-size: 20px;
+  font-size: 23px;
   cursor: pointer;
-  border: 1px solid white;
-  text-align: center;
+  background-color: gray;
   margin-top: 10px;
 }
-.doLogin:hover {
-  color: black;
-  font-weight: 700;
+#dayRank:hover {
+  text-decoration: underline;
+}
+#weekRank {
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+  background-color: gray;
+  margin-top: 10px;
+}
+#weekRank:hover {
+  text-decoration: underline;
+}
+#monthRank {
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+  background-color: gray;
+  margin-top: 10px;
+}
+#monthRank:hover {
+  text-decoration: underline;
+}
+#dibsRank {
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+  background-color: gray;
+  margin-top: 10px;
+}
+#dibsRank:hover {
+  text-decoration: underline;
+}
+hr {
+  border: 1px solid black;
 }
 </style>

@@ -8,12 +8,12 @@
     <div id="top">
       <div id="topLocation">
           <input type="button" class="img-button" onclick="location.reload()">
-          <button id="login" onclick="location.href='./login.html'">로그인</button>
-          <button id="signup" onclick="location.href='./signup.html'">회원가입</button>
+          <button id="login" onclick="location.href='./beforeLogin_main.html'">로그아웃</button>
+          <button id="signup" onclick="location.href='./myList.html'">My 보관함</button>
         <div>
-          <button id="movieRank">영화랭킹</button>
-          <button id="naver">네이버</button>
-          <button id="netflix">넷플릭스</button>
+          <button id="movieRank" onclick="location.href='./afterLogin_ranking.html'">영화랭킹</button>
+          <button id="naver" onclick="location.href='./afterLogin_naver_genre.html'">네이버</button>
+          <button id="netflix" onclick="location.href='./afterLogin_netflix_genre.html'">넷플릭스</button>
         </div>
       </div>
     </div>
@@ -28,27 +28,24 @@
       </div>
       <hr>
       <div>
-        <button id="rankMore" onclick="location.href='./ranking.html'">더보기</button>
+        <button id="rankMore" onclick="location.href='./afterLogin_ranking.html'">더보기</button>
       </div>
     </div>
-    <!-- 네이버 장르 보여주는 부분 -->
     <div id="naverPos">
       <p id="naverTitle">네이버 장르</p>
       <!-- 문제. 아직 api를 받지 못해서 작성 못함 -->
-      <button id="more" onclick="location.href='./naver_genre.html'">더보기</button>
+      <button id="more" onclick="location.href='./afterLogin_naver_genre.html'">더보기</button>
       <hr id="hr">
       <div id="naverGenre">
 
       </div>
     </div>
-    <!-- 넷플릭스 장르 보여주는 부분 -->
     <div id="netflixPos">
       <p id="netflixTitle">넷플릭스 장르</p>
-      <button id="more" onclick="location.href='./netflix_genre.html'">더보기</button>
+      <button id="more" onclick="location.href='./afterLogin_netflix_genre.html'">더보기</button>
       <hr id="hr">
       <div id="netflixGenre">
-     
-        <table> <!-- 문제. 화면을 줄일 시 테이블이 넘어가서 회색부분을 넘어감 된다면 말줄임을 사용하고 싶음-->
+        <table>
           <tr>
             <td><a href="http://www.netflix.com/browse/genre/5685">- 한국 영화</a></td>
             <td><a href="http://www.netflix.com/browse/genre/6548">- 코미디</a></td>
